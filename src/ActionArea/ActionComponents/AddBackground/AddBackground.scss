@@ -1,0 +1,26 @@
+.add-background-modal {
+  .modal-content {
+    .modal-body {
+      .form-row {
+        .form-group {
+          .btn-primary{
+            padding: 0;
+            color: #1f1f1f;
+            border: 0;
+            background: none;
+            width: 100%;
+            .form-control {
+              display: inline-block;
+            }
+          }
+          .dropdown-toggle::after {
+            display: none
+          }
+          .dropdown-menu {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}

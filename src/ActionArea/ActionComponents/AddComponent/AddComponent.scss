@@ -1,0 +1,41 @@
+#more-styles-popover {
+  .popover-body {
+    width: 275px;
+    max-height: 500px;
+    overflow-y: scroll;
+    .list-group {
+      .list-group-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 5px;
+        cursor: pointer;
+        .form-check {
+          margin-right: 0 !important;
+        }
+      }
+    }
+  }
+  .btn {
+    width: 100%;
+  }
+}
+
+.add-component-modal {
+  .modal-content {
+    .modal-body {
+      .form-group {
+        .form-label {
+          width: 100%;
+          .fa-trash-alt {
+            float: right;
+            position: relative;
+            top: 5px;
+            right: 10px;
+            font-size: 13px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

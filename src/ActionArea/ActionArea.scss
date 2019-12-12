@@ -1,0 +1,23 @@
+.action-area {
+  .title {
+    height: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 500;
+    background: #0a5f80;
+    border-radius: 3px;
+  }
+  .action-container {
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .btn {
+      margin-bottom: 20px;
+    }
+  }
+}
