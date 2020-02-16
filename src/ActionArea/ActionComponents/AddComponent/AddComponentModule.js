@@ -1,16 +1,13 @@
-const CREATE_COMPONENT = "CREATE_COMPONENT"
-
 export const createComponent = (component,id,name) => ({
-  type: CREATE_COMPONENT,
+  type: "CREATE_COMPONENT",
   component,
   id,
   name
 })
 
-
 const addComponent = (state=[],action) => {
   switch(action.type) {
-    case CREATE_COMPONENT:
+    case "CREATE_COMPONENT":
       let newState = [...state]
       let checkUnique = newState.filter((component) => component.id == action.id);
       if(checkUnique.length == 0) {

@@ -1,17 +1,17 @@
 import AddComponent from './AddComponent';
-import {createComponent} from './AddComponentModule';
+import {createComponent, checkUniqueId} from './AddComponentModule';
 import {connect} from 'react-redux';
 
 const mapStateToProps = (state) => {
   return {
-    totalComponents: state.components ? state.components.length : 0,
+    components: state.components,
     position: state.workingArea.position
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    createComponent: (component,id,name) => dispatch(createComponent(component,id,name))
+    createComponent: (component,id,name) => dispatch(createComponent(component,id,name)),
   }
 }
 

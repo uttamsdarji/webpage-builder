@@ -5,6 +5,10 @@ export const setPosition = (x,y) => ({
   position: {x,y}
 })
 
+export const startPositionTracking = () => {
+  
+}
+
 const initialState = {
   position: {}
 }
